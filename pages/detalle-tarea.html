@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito Logística · Pedido #1042</title>
+</head>
+<body>
+  <header>
+    <a href="tareas.html" aria-label="Volver">←</a>
+    <h1>Pedido #1042</h1>
+    <p><strong>ACTIVO</strong></p>
+  </header>
+
+  <main>
+    <section aria-labelledby="resumen-titulo">
+      <h2 id="resumen-titulo">Resumen</h2>
+      <p>2 retiros · 1 entrega</p>
+      <p>Tamaño mediano · Ventana 18–19 h</p>
+      <p>Pago estimado <data value="2300">$ 2.300</data></p>
+    </section>
+
+    <section aria-labelledby="paradas-titulo">
+      <h2 id="paradas-titulo">Paradas</h2>
+      <ol>
+        <li>
+          <article>
+            <h3>Retiro · Comercio A</h3>
+            <address>Dirección de la sucursal</address>
+            <p><strong>LISTO PARA RETIRO</strong></p>
+            <a href="registrar-retiro.html">n productos ›</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Retiro · Comercio B</h3>
+            <address>Dirección de la sucursal</address>
+            <p><strong>EN PREPARACIÓN</strong></p>
+            <a href="registrar-retiro.html">n productos ›</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Entrega · Cliente · María Clara</h3>
+            <address>Calle Falsa 123, Luján</address>
+            <p><strong>PENDIENTE</strong></p>
+            <a href="confirmar-entrega.html">n productos ›</a>
+          </article>
+        </li>
+      </ol>
+      <p role="note">No podés pasar a EN CAMINO hasta confirmar todos los retiros.</p>
+    </section>
+
+    <form action="tareas.html" method="post">
+      <button type="submit" name="accion" value="rechazar">Rechazar</button>
+      <button type="submit" name="accion" value="aceptar">Aceptar tarea</button>
+    </form>
+  </main>
+</body>
+</html>

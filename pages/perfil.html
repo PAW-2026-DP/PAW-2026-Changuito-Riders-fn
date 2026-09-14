@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito Logística · Perfil</title>
+</head>
+<body>
+  <header>
+    <a href="#navegacion" aria-label="Menú">☰</a>
+    <h1>Perfil</h1>
+    <p><strong>ACTIVO</strong></p>
+  </header>
+
+  <main>
+    <section aria-labelledby="rider-titulo">
+      <img src="../assets/img/placeholder.svg" alt="" width="72" height="72">
+      <h2 id="rider-titulo">Juan Rider</h2>
+      <p>Reputación <abbr title="4 de 5 estrellas">★★★★☆</abbr> · Nivel 3</p>
+    </section>
+
+    <form action="perfil.html" method="post">
+      <p>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" value="Juan Rider" autocomplete="name" required>
+      </p>
+      <p>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+54 9 ..." autocomplete="tel">
+      </p>
+      <p>
+        <label for="vehiculo">Vehículo</label>
+        <select id="vehiculo" name="vehiculo">
+          <option value="moto" selected>Moto</option>
+          <option value="bicicleta">Bicicleta</option>
+          <option value="auto">Auto</option>
+        </select>
+      </p>
+      <p>
+        <label for="zona">Zona de cobertura</label>
+        <select id="zona" name="zona">
+          <option value="lujan-centro" selected>Luján centro</option>
+          <option value="lujan-norte">Luján norte</option>
+          <option value="gral-rodriguez">Gral. Rodríguez</option>
+        </select>
+      </p>
+      <button type="submit">Guardar cambios</button>
+    </form>
+
+    <form action="../index.html" method="get">
+      <button type="submit">Cerrar sesión</button>
+    </form>
+  </main>
+
+  <nav id="navegacion" aria-label="Navegación principal">
+    <ul>
+      <li><a href="tareas.html">Tareas</a></li>
+      <li><a href="historial.html">Historial</a></li>
+      <li><a href="perfil.html" aria-current="page">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

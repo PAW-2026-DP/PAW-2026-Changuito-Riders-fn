@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="160" viewBox="0 0 200 160">
+<title>cmp-placeholder-imagen</title>
+<rect x="0" y="0" width="200" height="160" fill="#fff" stroke="#fff" stroke-width="0"/>
+<g id="cmp-placeholder-imagen" transform="translate(20,20)"><rect x="0" y="0" width="160" height="120" fill="#eee" stroke="#888" stroke-width="1"/><line x1="0" y1="0" x2="160" y2="120" stroke="#888" stroke-width="1"/><line x1="160" y1="0" x2="0" y2="120" stroke="#888" stroke-width="1"/></g>
+</svg>

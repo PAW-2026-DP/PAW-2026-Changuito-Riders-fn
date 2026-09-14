@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito Logística · Entrega #1042</title>
+</head>
+<body>
+  <header>
+    <a href="detalle-tarea.html" aria-label="Volver">←</a>
+    <h1>Entrega #1042</h1>
+    <p><strong>ACTIVO</strong></p>
+  </header>
+
+  <main>
+    <section aria-label="Estado">
+      <p><strong>EN CAMINO</strong></p>
+      <p>Retiros confirmados 2/2 ✓</p>
+    </section>
+
+    <section aria-labelledby="cliente-titulo">
+      <img src="../assets/img/placeholder.svg" alt="" width="48" height="48">
+      <h2 id="cliente-titulo">María Clara</h2>
+      <address>Calle Falsa 123, Luján</address>
+      <p>Timbre 2B · Ventana 18–19 h</p>
+      <a href="tel:+5490000000000">☎ Llamar</a>
+    </section>
+
+    <section aria-label="Bultos y cobro">
+      <p>Bultos: 3 (Comercio A: 2 · B: 1)</p>
+      <p>Total cobrado: <data value="12400">$ 12.400</data></p>
+    </section>
+
+    <form action="tareas.html" method="post">
+      <p>
+        <label for="codigo-entrega">Código de entrega del cliente</label>
+        <input type="text" id="codigo-entrega" name="codigo" inputmode="numeric" maxlength="4" required>
+      </p>
+      <button type="submit" name="accion" value="confirmar">Confirmar entrega</button>
+      <button type="submit" name="accion" value="no-entregado" formnovalidate>No se pudo entregar</button>
+    </form>
+  </main>
+</body>
+</html>

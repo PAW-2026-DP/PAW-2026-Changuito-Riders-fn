@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito Logística · Mis tareas</title>
+</head>
+<body>
+  <header>
+    <a href="#navegacion" aria-label="Menú">☰</a>
+    <h1>Mis tareas</h1>
+    <p><strong>ACTIVO</strong></p>
+  </header>
+
+  <main>
+    <form action="tareas.html" method="post">
+      <p>
+        <input type="checkbox" id="disponible" name="disponible" checked>
+        <label for="disponible">Disponible para recibir pedidos</label>
+      </p>
+    </form>
+
+    <nav aria-label="Pestañas">
+      <ul>
+        <li><a href="tareas.html?estado=asignadas" aria-current="true">Asignadas</a></li>
+        <li><a href="tareas.html?estado=en-curso">En curso</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="asignadas-titulo">
+      <h2 id="asignadas-titulo">Tareas asignadas</h2>
+      <ul>
+        <li>
+          <article>
+            <h3>Pedido #1042</h3>
+            <p><strong>ASIGNADO</strong></p>
+            <p>2 retiro(s) · 1 entrega</p>
+            <p>Entrega:</p>
+            <address>Calle Falsa 123, Luján</address>
+            <p>Tamaño: Mediano · Ventana 18–19 h</p>
+            <a href="detalle-tarea.html">Ver detalle</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Pedido #1038</h3>
+            <p><strong>EN CAMINO</strong></p>
+            <p>1 retiro(s) · 1 entrega</p>
+            <p>Entrega:</p>
+            <address>Calle Falsa 123, Luján</address>
+            <p>Tamaño: Mediano · Ventana 18–19 h</p>
+            <a href="detalle-tarea.html">Ver detalle</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Pedido #1036</h3>
+            <p><strong>ASIGNADO</strong></p>
+            <p>3 retiro(s) · 1 entrega</p>
+            <p>Entrega:</p>
+            <address>Calle Falsa 123, Luján</address>
+            <p>Tamaño: Mediano · Ventana 18–19 h</p>
+            <a href="detalle-tarea.html">Ver detalle</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Pedido #1031</h3>
+            <p><strong>ASIGNADO</strong></p>
+            <p>1 retiro(s) · 1 entrega</p>
+            <p>Entrega:</p>
+            <address>Calle Falsa 123, Luján</address>
+            <p>Tamaño: Mediano · Ventana 18–19 h</p>
+            <a href="detalle-tarea.html">Ver detalle</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <nav id="navegacion" aria-label="Navegación principal">
+    <ul>
+      <li><a href="tareas.html" aria-current="page">Tareas</a></li>
+      <li><a href="historial.html">Historial</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
