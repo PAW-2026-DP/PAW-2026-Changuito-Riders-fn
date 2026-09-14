@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito Logística · Retiro en Comercio A</title>
+</head>
+<body>
+  <header>
+    <a href="detalle-tarea.html" aria-label="Volver">←</a>
+    <h1>Retiro · Comercio A</h1>
+    <p><strong>ACTIVO</strong></p>
+  </header>
+
+  <main>
+    <section aria-labelledby="comercio-titulo">
+      <h2 id="comercio-titulo">Comercio A · Sucursal Centro</h2>
+      <address>Av. Siempre Viva 742</address>
+    </section>
+
+    <form action="detalle-tarea.html" method="post">
+      <fieldset>
+        <legend>Checklist de productos</legend>
+        <p><input type="checkbox" id="item-1" name="items" value="1" checked> <label for="item-1">Leche entera 1L x2</label></p>
+        <p><input type="checkbox" id="item-2" name="items" value="2" checked> <label for="item-2">Fideos 500g x3</label></p>
+        <p><input type="checkbox" id="item-3" name="items" value="3" checked> <label for="item-3">Arroz 1kg x1</label></p>
+        <p><input type="checkbox" id="item-4" name="items" value="4"> <label for="item-4">Aceite 900ml x1</label></p>
+      </fieldset>
+      <p>
+        <label for="codigo">Código de retiro</label>
+        <input type="text" id="codigo" name="codigo" placeholder="Ej. 4821" inputmode="numeric" required>
+      </p>
+      <p>
+        <label for="observaciones">Observaciones</label>
+        <textarea id="observaciones" name="observaciones" placeholder="Opcional" rows="3"></textarea>
+      </p>
+      <button type="submit" name="accion" value="confirmar">Confirmar retiro</button>
+      <button type="submit" name="accion" value="faltante" formnovalidate>Reportar faltante</button>
+    </form>
+  </main>
+</body>
+</html>

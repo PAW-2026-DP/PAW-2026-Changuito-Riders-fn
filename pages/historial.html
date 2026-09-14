@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changuito Logística · Historial</title>
+</head>
+<body>
+  <header>
+    <a href="#navegacion" aria-label="Menú">☰</a>
+    <h1>Historial</h1>
+    <p><strong>ACTIVO</strong></p>
+  </header>
+
+  <main>
+    <section aria-labelledby="resumen-titulo">
+      <h2 id="resumen-titulo">Resumen</h2>
+      <dl>
+        <dt>Entregas</dt>
+        <dd>48</dd>
+        <dt>Ganado</dt>
+        <dd><data value="96000">$ 96k</data></dd>
+        <dt>A tiempo</dt>
+        <dd>94%</dd>
+      </dl>
+    </section>
+
+    <form action="historial.html" method="get">
+      <label for="periodo">Período</label>
+      <select id="periodo" name="periodo">
+        <option value="semana">Esta semana</option>
+        <option value="mes" selected>Este mes</option>
+        <option value="anio">Este año</option>
+      </select>
+      <button type="submit">Filtrar</button>
+    </form>
+
+    <section aria-labelledby="entregas-titulo">
+      <h2 id="entregas-titulo">Entregas realizadas</h2>
+      <ul>
+        <li>
+          <article>
+            <h3>Pedido #1031</h3>
+            <p><time datetime="2026-09-10">10/09</time> · 2 comercios</p>
+            <p><data value="2100">$ 2.100</data></p>
+            <p><strong>ENTREGADO</strong></p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Pedido #1027</h3>
+            <p><time datetime="2026-09-10">10/09</time> · 2 comercios</p>
+            <p><data value="2100">$ 2.100</data></p>
+            <p><strong>ENTREGADO</strong></p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Pedido #1019</h3>
+            <p><time datetime="2026-09-10">10/09</time> · 2 comercios</p>
+            <p><data value="2100">$ 2.100</data></p>
+            <p><strong>ENTREGADO</strong></p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Pedido #1012</h3>
+            <p><time datetime="2026-09-10">10/09</time> · 2 comercios</p>
+            <p><data value="2100">$ 2.100</data></p>
+            <p><strong>ENTREGADO</strong></p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Pedido #1003</h3>
+            <p><time datetime="2026-09-10">10/09</time> · 2 comercios</p>
+            <p><data value="2100">$ 2.100</data></p>
+            <p><strong>ENTREGADO</strong></p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Pedido #0998</h3>
+            <p><time datetime="2026-09-10">10/09</time> · 2 comercios</p>
+            <p><data value="2100">$ 2.100</data></p>
+            <p><strong>ENTREGADO</strong></p>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <nav id="navegacion" aria-label="Navegación principal">
+    <ul>
+      <li><a href="tareas.html">Tareas</a></li>
+      <li><a href="historial.html" aria-current="page">Historial</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
